@@ -1,32 +1,30 @@
-// function newImage (url, left, bottom) {
-//     let object = document.createElement('img')
-//     object.src = url
-//     object.style.position = 'fixed'
-//     object.style.left = left + 'px'
-//     object.style.bottom = bottom + 'px'
-//     document.body.append(object)
-//     return object
-// }
+function newImage (url, left, bottom) {
+    let object = document.createElement('img')
+    object.src = url
+    object.style.position = 'fixed'
+    object.style.left = left + 'px'
+    object.style.bottom = bottom + 'px'
+    document.body.append(object)
+    return object
+}
 
-// newImage ('assets/green-character.gif', 100, 100)
-// newImage ('assets/pine-tree.png', 450, 200)
-// newImage ('assets/tree.png', 200, 300)
-// newImage ('assets/pillar.png', 350, 100)
-// newImage ('assets/crate.png', 150, 200)
-// newImage ('assets/well.png', 500, 425)
+newImage ('assets/green-character.gif', 100, 100)
+newImage ('assets/pine-tree.png', 450, 200)
+newImage ('assets/tree.png', 200, 300)
+newImage ('assets/pillar.png', 350, 100)
+newImage ('assets/crate.png', 150, 200)
+newImage ('assets/well.png', 500, 425)
 
 
-// function newItem (url, left, bottom) {
-//     let item = newImage (url, left, bottom)
+function newItem (url, left, bottom) {
+    let item = newImage (url, left, bottom)
 
-//     item.addEventListener ('dblclick', function (){
-//         item.remove ()
-//     })
-// }
+    item.addEventListener ('dblclick', function (){
+        item.remove ()
+    })
+}
 
-// newItem ('assets/sword.png', 500, 405)
-// newItem ('assets/sheild.png', 165, 185)
-// newItem ('assets/staff.png', 600, 100)
+newItem ('assets/sword.png', 500, 405)
+newItem ('assets/sheild.png', 165, 185)
+newItem ('assets/staff.png', 600, 100)
 
-document.getElementById(w).innerHTML = "Screen Width: " + screen.width
-console.log(w)
